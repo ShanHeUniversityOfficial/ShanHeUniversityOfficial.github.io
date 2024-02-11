@@ -185,9 +185,10 @@ export default defineUserConfig(
                     options: {
                         appId: 'S4fpkb89hT4My5qbJqq7H6xU-MdYXbMMI',
                         appKey: 'LBxPaeS8pGjjWFamfGVpMqFQ',
-                        placeholder: '填写邮箱或许可以收到回复提醒哦！',
-                        verify: true, // 验证码服务
-                        notify: true,
+                        placeholder: '你有什么想说的吗',
+                        // verify: true, // 验证码服务
+                        // notify: true,
+                        enableQQ: true,
                         recordIP: true,
                         hideComments: false // 隐藏评论
                     },
