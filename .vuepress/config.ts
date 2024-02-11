@@ -39,12 +39,22 @@ export default defineUserConfig(
                     {
                         text: "类别",
                         icon: "CollapseCategories",
-                        link: "/categories/reco/1/"
+                        children: [
+                            {
+                                text: "墨虞有话说",
+                                link: "/categories/moyuyouhuashuo/1/"
+                            }
+                        ]
                     },
                     {
                         text: "标签",
                         icon: "Tag",
-                        link: "/tags/tag1/1/"
+                        children: [
+                            {
+                                text: "墨虞",
+                                link: "/tags/moyu/1/"
+                            }
+                        ]
                     },
                     {
                         text: "文档",
@@ -185,6 +195,7 @@ export default defineUserConfig(
                     options: {
                         appId: 'S4fpkb89hT4My5qbJqq7H6xU-MdYXbMMI',
                         appKey: 'LBxPaeS8pGjjWFamfGVpMqFQ',
+                        serverURLs: "https://s4fpkb89.api.lncldglobal.com",
                         placeholder: '你有什么想说的吗',
                         // verify: true, // 验证码服务
                         // notify: true,
