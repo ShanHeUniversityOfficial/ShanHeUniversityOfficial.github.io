@@ -2,8 +2,8 @@
   "name": "shan-he-university-website",
   "version": "1.0.0",
   "description": "山河大学官方网站",
-  "repository": "git@github.com:ShanHeUniversityOfficial/shuw.git",
-  "author": "reco_luan <recoluan@outlook.com>",
+  "repository": "git@github.com:ShanHeUniversityOfficial/ShanHeUniversityOfficial.github.io.git",
+  "author": "墨虞 <MoYeRanQianZhi@gmail.com>",
   "license": "MIT",
   "scripts": {
     "dev": "vuepress dev .",
