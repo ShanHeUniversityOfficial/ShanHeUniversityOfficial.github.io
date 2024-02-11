@@ -3,7 +3,7 @@ name: Deploy GitHub Pages
 on:
   push:
     branches:
-      - main
+      - master
 
 permissions:
   contents: write
@@ -27,8 +27,13 @@ jobs:
           node-version: 20
           cache: npm
 
+      - name: install modules
+        run: npm install
+
       - name: Build
-        run: npm install && npm run build
+        env:
+          NODE_OPTIONS: --max_old_space_size=8192
+        run: npm run build
 
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4
